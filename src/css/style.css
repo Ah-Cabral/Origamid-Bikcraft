@@ -7,6 +7,7 @@ body {
   /* Introdução */
   /* Portfólio */
   /*Qualidade*/
+  /*Quebra*/
 }
 body img {
   display: block;
@@ -53,6 +54,32 @@ body .call {
 body .call p {
   margin-bottom: 2rem;
 }
+body .quote-externo {
+  max-width: 320px;
+  margin: 0 auto;
+  color: #f1f1f1;
+  margin-bottom: 40px;
+}
+body .quote-externo cite {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 700;
+}
+body .quote-externo p {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+body .quote-externo p::before, body .quote-externo p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f1f1f1;
+  margin: 12px auto 10px auto;
+}
 body .main-header {
   width: 100%;
   background: #fec63e;
@@ -96,32 +123,6 @@ body .introducao h1 {
   color: #f1f1f1;
   font-weight: bold;
   text-transform: uppercase;
-}
-body .introducao .quote-externo {
-  max-width: 320px;
-  margin: 0 auto;
-  color: #f1f1f1;
-  margin-bottom: 40px;
-}
-body .introducao .quote-externo cite {
-  font-family: "Montserrat", Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 700;
-}
-body .introducao .quote-externo p {
-  font-family: "Times New Roman", serif;
-  font-style: italic;
-  font-size: 1.1rem;
-}
-body .introducao .quote-externo p::before, body .introducao .quote-externo p::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #f1f1f1;
-  margin: 12px auto 10px auto;
 }
 body .produtos {
   padding: 60px 0;
@@ -228,4 +229,14 @@ body .qualidade li h3::after {
 body .qualidade li p {
   padding: 10px 20px;
   margin-bottom: 20px;
+}
+body .quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../images/bg-footer.jpg") no-repeat cover;
+  text-align: center;
+  padding-top: 2.3rem;
+}
+body .quebra .quote-externo {
+  max-width: 400px;
 }
