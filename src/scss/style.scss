@@ -9,240 +9,254 @@ $main-font: "Montserrat", Helvetica, sans-serif;
 $second-font: "Times New Roman", serif;
 
 body {
-    font-family: $main-font;
-    img {
-        display: block;
+  font-family: $main-font;
+  img {
+    display: block;
+  }
+  //Button geral
+  .btn {
+    border: 3px solid $main-yellow;
+    padding: 0.5rem 1.3rem;
+    color: $main-yellow;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s;
+    &:hover {
+      color: $main-white;
+      border-color: $main-white;
     }
-    //Button geral
-    .btn {
-        border: 3px solid $main-yellow;
-        padding: 0.5rem 1.3rem;
-        color: $main-yellow;
-        font-size: 14px;
-        text-transform: uppercase;
+  }
+  .btn-preto:hover {
+    color: $main-black;
+    border-color: $main-black;
+  }
+  .subtitulo {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: $main-black;
+    text-transform: uppercase;
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: $main-black;
+      margin: 8px auto;
+    }
+  }
+  .call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    color: $main-white;
+    margin-bottom: 40px;
+    cite {
+      font-family: $main-font;
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    p {
+      font-family: $second-font;
+      font-style: italic;
+      font-size: 1.1rem;
+      //Adicionando linha
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: $main-white;
+        margin: 12px auto 10px auto;
+      }
+    }
+  }
+
+  /* Header */
+  .main-header {
+    width: 100%;
+    background: $main-yellow;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .header-menu {
+      text-align: right;
+      margin-top: 1.5rem;
+      ul,
+      li {
+        display: inline-block;
+        margin-left: 1.3rem;
+      }
+      ul li a {
+        color: $main-black;
         font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 1rem;
+        padding: 10px 5px;
         transition: all 0.2s;
         &:hover {
-            color: $main-white;
-            border-color: $main-white;
+          color: #fff;
         }
+      }
     }
-    .btn-preto:hover {
-        color: $main-black;
-        border-color: $main-black;
+  }
+  /* Introdução */
+
+  .introducao {
+    width: 100%;
+    height: 380px;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 100px;
+    h1 {
+      font-size: 48px;
+      color: $main-white;
+      font-weight: bold;
+      text-transform: uppercase;
     }
-    .subtitulo {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        color: $main-black;
-        text-transform: uppercase;
+  }
+  .produtos {
+    padding: 60px 0;
+    .produtos-lista {
+      margin-top: 2rem;
+      li {
+        background: $main-yellow;
         text-align: center;
-        &::after {
+        h3 {
+          font-weight: bold;
+          font-size: 1.2rem;
+          line-height: 25px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-top: 20px;
+          &::after {
             content: "";
             display: block;
             width: 60px;
             height: 3px;
             background: $main-black;
-            margin: 8px auto;
+            margin: 2px auto;
+          }
         }
+        p {
+          padding: 10px 20px;
+          margin-bottom: 20px;
+        }
+      }
+      .produtos-icone {
+        background: $main-black;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  /* Portfólio */
+
+  .portfolio {
+    width: 100%;
+    background: $main-black;
+    padding: 40px 0;
+    .subtitulo {
+      color: $main-yellow;
+      &::after {
+        background: $main-yellow;
+        margin: 4px auto;
+        margin-bottom: 2rem;
+      }
+    }
+    .portfolio-lista {
+      li {
+        &:last-child {
+          margin-top: 1.3rem;
+        }
+      }
     }
     .call {
-        padding-top: 40px;
-        text-align: center;
-        clear: both;
-        p {
-            margin-bottom: 2rem;
-        }
+      text-align: center;
+      padding-top: 1.5rem;
+      p {
+        color: $main-white;
+      }
     }
-    /* Header */
-    .main-header {
-        width: 100%;
-        background: $main-yellow;
-        padding: 1rem 0;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        .header-menu {
-            text-align: right;
-            margin-top: 1.5rem;
-            ul,
-            li {
-                display: inline-block;
-                margin-left: 1.3rem;
-            }
-            ul li a {
-                color: $main-black;
-                font-weight: bold;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                line-height: 1rem;
-                padding: 10px 5px;
-                transition: all 0.2s;
-                &:hover {
-                    color: #fff;
-                }
-            }
-        }
-    }
-    /* Introdução */
+  }
+  /*Qualidade*/
 
-    .introducao {
-        width: 100%;
-        height: 380px;
-        background: url("../images/bg.jpg");
-        background-size: cover;
-        margin-top: 92px;
-        text-align: center;
-        padding-top: 100px;
-        h1 {
-            font-size: 48px;
-            color: $main-white;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        .quote-externo {
-            max-width: 320px;
-            margin: 0 auto;
-            color: $main-white;
-            margin-bottom: 40px;
-            cite {
-                font-family: $main-font;
-                text-transform: uppercase;
-                font-style: normal;
-                font-size: 1rem;
-                font-weight: 700;
-            }
-            p {
-                font-family: $second-font;
-                font-style: italic;
-                font-size: 1.1rem;
-                //Adicionando linha
-                &::before,
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 60px;
-                    height: 3px;
-                    background: $main-white;
-                    margin: 12px auto 10px auto;
-                }
-            }
-        }
+  .qualidade {
+    padding: 2.5rem 0;
+    .subtitulo {
+      margin-bottom: 2rem;
     }
-    .produtos {
-        padding: 60px 0;
-        .produtos-lista {
-            margin-top: 2rem;
-            li {
-                background: $main-yellow;
-                text-align: center;
-                h3 {
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    line-height: 25px;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                    margin-top: 20px;
-                    &::after {
-                        content: "";
-                        display: block;
-                        width: 60px;
-                        height: 3px;
-                        background: $main-black;
-                        margin: 2px auto;
-                    }
-                }
-                p {
-                    padding: 10px 20px;
-                    margin-bottom: 20px;
-                }
-            }
-            .produtos-icone {
-                background: $main-black;
-                padding: 1.5rem;
-                display: flex;
-                justify-content: center;
-            }
-        }
+    &::after {
+      content: "";
+      width: 634px;
+      height: 83px;
+      display: block;
+      background: url("../images/linhas.svg");
+      position: absolute;
+      top: 12.4rem;
+      right: 10.1rem;
+      z-index: -1;
     }
-    /* Portfólio */
-
-    .portfolio {
-        width: 100%;
-        background: $main-black;
-        padding: 40px 0;
-        .subtitulo {
-            color: $main-yellow;
-            &::after {
-                background: $main-yellow;
-                margin: 4px auto;
-                margin-bottom: 2rem;
-            }
-        }
-        .portfolio-lista {
-            li {
-                &:last-child {
-                    margin-top: 1.3rem;
-                }
-            }
-        }
-        .call {
-            text-align: center;
-            padding-top: 1.5rem;
-            p {
-                color: $main-white;
-            }
-        }
+    .qualidade-lista {
+      padding-top: 1.3rem;
     }
-    /*Qualidade*/
-
-    .qualidade {
-        padding: 2.5rem 0;
-        .subtitulo {
-            margin-bottom: 2rem;
-        }
+    img {
+      margin: 0 auto;
+    }
+    li {
+      text-align: center;
+      padding: 0 2.5rem;
+      h3 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
         &::after {
-            content: "";
-            width: 634px;
-            height: 83px;
-            display: block;
-            background: url("../images/linhas.svg");
-            position: absolute;
-            top: 12.4rem;
-            right: 10.1rem;
-            z-index: -1;
+          content: "";
+          display: block;
+          width: 60px;
+          height: 3px;
+          background: $main-black;
+          margin: 6px auto;
         }
-        .qualidade-lista {
-            padding-top: 1.3rem;
-        }
-        img {
-            margin: 0 auto;
-        }
-        li {
-            text-align: center;
-            padding: 0 2.5rem;
-            h3 {
-                font-weight: bold;
-                font-size: 1.2rem;
-                line-height: 25px;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                margin-top: 20px;
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 60px;
-                    height: 3px;
-                    background: $main-black;
-                    margin: 6px auto;
-                }
-            }
-            p {
-                padding: 10px 20px;
-                margin-bottom: 20px;
-            }
-        }
+      }
+      p {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+      }
     }
+  }
+  /*Quebra*/
+
+  .quebra {
+    width: 100%;
+    height: 220px;
+    background: url("../images/bg-footer.jpg") no-repeat cover;
+    text-align: center;
+    padding-top: 2.3rem;
+    .quote-externo {
+      max-width: 400px;
+    }
+  }
 }
