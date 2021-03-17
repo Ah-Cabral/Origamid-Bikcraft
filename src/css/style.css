@@ -156,7 +156,8 @@ body .produtos .produtos-lista li p {
 body .produtos .produtos-lista .produtos-icone {
   background: #000;
   padding: 1.5rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 body .portfolio {
   width: 100%;
@@ -184,6 +185,9 @@ body .portfolio .call p {
 body .qualidade {
   padding: 2.5rem 0;
 }
+body .qualidade .subtitulo {
+  margin-bottom: 2rem;
+}
 body .qualidade::after {
   content: "";
   width: 634px;
@@ -191,7 +195,7 @@ body .qualidade::after {
   display: block;
   background: url("../images/linhas.svg");
   position: absolute;
-  top: 10.4rem;
+  top: 12.4rem;
   right: 10.1rem;
   z-index: -1;
 }
