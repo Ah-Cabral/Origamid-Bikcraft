@@ -1,12 +1,13 @@
 /* Estilos Gerais */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 $main-yellow: #fec63e;
 $main-black: #000;
 $main-white: #f1f1f1;
 $main-font: "Montserrat", Helvetica, sans-serif;
-$second-font: "Times New Roman", serif;
+$second-font: Georgia, "Times New Roman", serif;
 
 body {
   font-family: $main-font;
@@ -247,16 +248,100 @@ body {
       }
     }
   }
+
   /*Quebra*/
 
   .quebra {
     width: 100%;
     height: 220px;
-    background: url("../images/bg-footer.jpg") no-repeat cover;
+    background: url("../images/bg-footer.jpg") no-repeat center;
+    background-size: cover;
     text-align: center;
     padding-top: 2.3rem;
     .quote-externo {
       max-width: 400px;
+    }
+  }
+
+  /*Footer*/
+
+  .footer {
+    width: 100%;
+    background-color: $main-black;
+    padding: 1.3rem 0;
+    color: $main-white;
+    i {
+      color: $main-yellow;
+    }
+    h3 {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: $main-yellow;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      font-weight: bold;
+      &::after {
+        content: "";
+        width: 4rem;
+        height: 3px;
+        display: block;
+        background-color: $main-yellow;
+        margin: 0.7rem 0 0.7rem 0;
+      }
+    }
+    .footer-contato {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+    .footer-historia {
+      padding-right: 2.3rem;
+      p {
+        font-family: $second-font;
+      }
+    }
+    .footer-contato {
+      ul {
+        li {
+          font-size: 1rem;
+          line-height: 1.2px;
+          font-family: $second-font;
+        }
+      }
+    }
+    .footer-redes {
+      ul {
+        li {
+          display: inline-block;
+          margin: 0.2rem;
+          a {
+            display: block;
+            border: 3px solid $main-yellow;
+            padding: 0.5rem;
+            transition: all 0.3s;
+            &:hover {
+              border: 4px solid $main-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copy {
+    width: 100%;
+    padding: 1rem;
+    background: $main-yellow;
+    p {
+      color: $main-black;
+      font-weight: 600;
+      a {
+        font-weight: 600;
+        color: $main-black;
+        transition: all 0.2s;
+        font-weight: bold;
+        &:hover {
+          color: $main-white;
+        }
+      }
     }
   }
 }
