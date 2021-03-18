@@ -6,6 +6,7 @@ body {
   font-family: "Montserrat", Helvetica, sans-serif;
   /* Header */
   /* Introdução */
+  /*Introdução Interna*/
   /* Portfólio */
   /*Qualidade*/
   /*Quebra*/
@@ -47,6 +48,23 @@ body .subtitulo::after {
   height: 3px;
   background: #000;
   margin: 8px auto;
+}
+body .subtitulo-interno {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+body .subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px 0;
 }
 body .call {
   padding-top: 40px;
@@ -108,6 +126,9 @@ body .main-header .header-menu ul li a {
   padding: 10px 5px;
   transition: all 0.2s;
 }
+body .main-header .header-menu ul li a.menu-ativo {
+  color: #f1f1f1;
+}
 body .main-header .header-menu ul li a:hover {
   color: #fff;
 }
@@ -125,6 +146,28 @@ body .introducao h1 {
   color: #f1f1f1;
   font-weight: bold;
   text-transform: uppercase;
+}
+body .introducao-interna {
+  width: 100%;
+  height: 17rem;
+  padding-top: 92px;
+  background-size: cover;
+  color: #f1f1f1;
+  text-align: center;
+}
+body .introducao-interna h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+body .introducao-interna h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f1f1f1;
+  margin: 12px auto 10px auto;
 }
 body .produtos {
   padding: 60px 0;
@@ -204,6 +247,7 @@ body .qualidade::after {
 }
 body .qualidade .qualidade-lista {
   padding-top: 1.3rem;
+  overflow: auto;
 }
 body .qualidade img {
   margin: 0 auto;
