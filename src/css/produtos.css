@@ -100,4 +100,37 @@
 .orcamento .form button {
   background: none;
   padding: 0.5rem 3rem;
+  outline: none;
+  cursor: pointer;
+}
+.orcamento .orcamento-dados {
+  color: #f1f1f1;
+}
+.orcamento .orcamento-dados h3 {
+  font-size: 18px;
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.orcamento .orcamento-dados p {
+  padding-top: 1rem;
+}
+.orcamento .orcamento-dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.orcamento .orcamento-dados i {
+  color: #fec63e;
+}
+.orcamento .orcamento-dados ul {
+  padding-right: 40px;
+}
+.orcamento .orcamento-dados ul li {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.orcamento .orcamento-dados ul li:nth-child(even) {
+  background: #1d1d1d;
 }
