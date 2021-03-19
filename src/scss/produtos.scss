@@ -106,6 +106,39 @@ $second-font: Georgia, "Times New Roman", serif;
     button {
       background: none;
       padding: 0.5rem 3rem;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  .orcamento-dados {
+    color: $main-white;
+    h3 {
+      font-size: 18px;
+      color: $main-yellow;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      padding-top: 1rem;
+    }
+    span {
+      display: block;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    i {
+      color: $main-yellow;
+    }
+    ul {
+      padding-right: 40px;
+      li {
+        font-size: 14px;
+        padding: 10px 15px;
+        &:nth-child(even) {
+          background: #1d1d1d;
+        }
+      }
     }
   }
 }
