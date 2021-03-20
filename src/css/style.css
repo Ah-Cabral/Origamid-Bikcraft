@@ -23,7 +23,7 @@ img {
 	line-height: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 }
 
 .btn:hover {
@@ -40,7 +40,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	color: #000;
 	text-transform: uppercase;
 	text-align: center;
@@ -60,7 +60,7 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	color: #000;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -100,18 +100,18 @@ img {
 	color: #000;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	font-size: 14px;
 	line-height: 20px;
 	padding: 10px 0;
 }
 
 .header_menu ul li a:hover {
-	color: #FFF;
+	color: #fff;
 }
 
 .header_menu ul li a.menu_ativo {
-	color: #FFF;
+	color: #fff;
 }
 
 /* Introdução */
@@ -119,7 +119,7 @@ img {
 .introducao {
 	width: 100%;
 	height: 380px;
-	background: url("../img/bg.jpg") no-repeat center;
+	background: url("../images/bg.jpg") no-repeat center;
 	background-size: cover;
 	margin-top: 92px;
 	text-align: center;
@@ -128,7 +128,7 @@ img {
 
 .introducao h1 {
 	font-size: 48px;
-	color: #FFF;
+	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -144,7 +144,8 @@ img {
 	font-style: italic;
 }
 
-.quote-externo p:before, .quote-externo p:after {
+.quote-externo p:before,
+.quote-externo p:after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -157,7 +158,7 @@ img {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 }
 
 /*Introducao Interna*/
@@ -186,14 +187,13 @@ img {
 	margin: 6px auto 10px auto;
 }
 
-
 /*Produtos*/
 
 .produtos {
 	padding: 60px 0;
 }
 
-.produtos_lista li{
+.produtos_lista li {
 	background: #fec63e;
 	text-align: center;
 }
@@ -202,16 +202,16 @@ img {
 	margin: 0 auto;
 }
 
-.produtos_lista li h3{
+.produtos_lista li h3 {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	margin-top: 20px;
 }
 
-.produtos_lista li h3:after{
+.produtos_lista li h3:after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -235,7 +235,7 @@ img {
 	clear: both;
 }
 
-.call p{
+.call p {
 	margin-bottom: 20px;
 }
 
@@ -274,14 +274,14 @@ img {
 	width: 634px;
 	height: 83px;
 	display: block;
-	background: url("../img/linhas.svg") no-repeat center;
+	background: url("../images/linhas.svg") no-repeat center;
 	position: absolute;
 	top: 209px;
 	right: 162px;
 	z-index: -1;
 }
 
-.qualidade img{
+.qualidade img {
 	margin: 0 auto;
 }
 
@@ -295,16 +295,16 @@ img {
 	padding: 0 40px;
 }
 
-.qualidade_lista li h3{
+.qualidade_lista li h3 {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	margin-top: 20px;
 }
 
-.qualidade_lista li h3:after{
+.qualidade_lista li h3:after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -318,7 +318,7 @@ img {
 .quebra {
 	width: 100%;
 	height: 220px;
-	background: url("../img/bg-footer.jpg") no-repeat center;
+	background: url("../images/bg-footer.jpg") no-repeat center;
 	background-size: cover;
 	text-align: center;
 	padding-top: 40px;
@@ -342,7 +342,7 @@ img {
 	line-height: 25px;
 	color: #fec63e;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: 0.1em;
 	font-weight: bold;
 }
 

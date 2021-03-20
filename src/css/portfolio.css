@@ -1,5 +1,5 @@
 .interna_portfolio {
-	background: url("../img/bg-portfolio.jpg") no-repeat center;
+	background: url("../images/bg-portfolio.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -9,7 +9,7 @@
 	margin: 0 auto;
 }
 
-.quote_clientes p{
+.quote_clientes p {
 	text-align: center;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 18px;

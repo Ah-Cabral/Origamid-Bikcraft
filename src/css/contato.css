@@ -1,5 +1,5 @@
 .interna_contato {
-	background: url("../img/bg-contato.jpg") no-repeat center;
+	background: url("../images/bg-contato.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -13,7 +13,7 @@
 	padding-right: 60px;
 }
 
-.contato_form label{
+.contato_form label {
 	display: block;
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 18px;
@@ -55,7 +55,7 @@
 	color: #fff;
 }
 
-.contato_dados h3{
+.contato_dados h3 {
 	font-size: 18px;
 	line-height: 25px;
 	text-transform: uppercase;

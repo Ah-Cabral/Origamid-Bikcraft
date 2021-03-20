@@ -1,5 +1,5 @@
 .interna_sobre {
-	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background: url("../images/bg-sobre.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -11,7 +11,7 @@
 	font-size: 18px;
 	line-height: 25px;
 	margin-bottom: 1em;
-	padding-right: 60px
+	padding-right: 60px;
 }
 
 .missao_sobre ul li {
