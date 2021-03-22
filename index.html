@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bikcraft</title>
+    <title>Bikcraft - Bicicletas Personalizadas</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/grid.css">
@@ -16,10 +19,10 @@
     <main>
         <header class="header">
             <div class="container">
-                <a href="../../index.html" class="grid-4">
+                <a href="../../index.html" class="grid-4" data-anime="500">
                     <img src="src/images/bikcraft.svg" alt="Bikcraft">
                 </a>
-                <nav class="grid-12 header_menu">
+                <nav class="grid-12 header_menu" data-anime="700">
                     <ul>
                         <li><a href="src/pages/sobre.html">Sobre</a></li>
                         <li><a href="src/pages/produtos.html">Produtos</a></li>
@@ -32,12 +35,12 @@
 
         <section class="introducao">
             <div class="container">
-                <h1>Bicicletas Feitas a Mão</h1>
-                <blockquote class="quote-externo">
+                <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+                <blockquote class="quote-externo fadeInDown" data-anime="600">
                     <p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
                     <cite>WILLIAM MORRIS</cite>
                 </blockquote>
-                <a href="produtos.html" class="btn">Orçamento</a>
+                <a href="produtos.html" class="btn fadeInDown" data-anime="800">Orçamento</a>
             </div>
         </section>
 
@@ -170,7 +173,9 @@
     </main>
 
     <script src="src/js/simple-slide.js"></script>
+    <script src="src/js/simple-anime.js"></script>
     <script src="src/js/script.js"></script>
+    
 
 </body>
 
