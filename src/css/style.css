@@ -386,16 +386,16 @@ img {
   padding: 20px 0;
 }
 
-[data-slide] {
+.js [data-slide] {
   position: relative;
 }
-[data-slide] > * {
+.js [data-slide] > * {
   position: absolute;
   top: 0;
   opacity: 0;
   pointer-events: none;
 }
-[data-slide] > .active {
+.js [data-slide] > .active {
   position: relative;
   opacity: 1;
   transition: opacity 1.2s;
@@ -404,13 +404,13 @@ img {
 }
 
 /* 6 CSS recomendado para a navegação */
-[data-slide-nav] {
+.js [data-slide-nav] {
   display: block;
   justify-content: center;
   text-align: center;
   margin-top: 20px;
 }
-[data-slide-nav] > button {
+.js [data-slide-nav] > button {
   display: inline-block;
   width: 16px;
   margin: 4px;
@@ -423,6 +423,6 @@ img {
   overflow: hidden;
   outline: none;
 }
-[data-slide-nav] > button.active {
+.js [data-slide-nav] > button.active {
   background: #fec454;
 }
